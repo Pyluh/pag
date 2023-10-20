@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ha0k1-jnnb-6l9p*iu#v_$_u)qm7vt!ier(or@%wp^sb&41-4j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#DEBUG = False
 DEBUG = True
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -115,7 +115,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -137,4 +137,4 @@ INSTALLED_APPS = [ 'django.contrib.admin', 'django.contrib.auth', 'django.contri
 ... 
 import os 
 ... 
-STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'Proyecto/staticS')),] # ?????????, la terminal dice que no existe el directorio statics
+STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'Proyecto/static')),] # ?????????, la terminal dice que no existe el directorio statics
