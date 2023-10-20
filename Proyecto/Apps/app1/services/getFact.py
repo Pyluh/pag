@@ -1,4 +1,4 @@
-from pip import requests #funciona con poner from pip??, me daba error con solo import requests
+import requests #funciona con poner from pip??, me daba error con solo import requests
  
 def generate_request(url, params={}): 
     response = requests.get(url, params=params) 
