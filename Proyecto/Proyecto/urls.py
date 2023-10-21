@@ -24,13 +24,3 @@ path('admin/', admin.site.urls),
 path('app1/', include('Apps.app1.urls')),
 path('accounts/', include('django.contrib.auth.urls')) 
 ]
-
-#urlpatterns = [ 
-#    path('', views.home), 
-#    path('eliminarFact/<fact_text>',views.eliminarFact), 
-#    path('edicionFact/<fact_text>',views.edicionFact), 
-#    path('editarFact/<fact_text>/', views.editarFact, name='editar_fact'),
-#    path('admin/', admin.site.urls),
-#    path('', include('app.urls')),
-#    path('accounts/', include('django.contrib.urls')) 
-#]
